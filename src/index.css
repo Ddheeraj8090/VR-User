@@ -417,10 +417,6 @@ svg.dot_icon_button path {
 }
 
 
-body{
-  display: none !important; 
-}
-
 /* Dinesh_responsive_css_start */
 
 @media (max-width: 991px) {
