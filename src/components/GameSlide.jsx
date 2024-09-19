@@ -18,7 +18,7 @@ const GameSlide = ({ list }) => {
     slidesToShow: 4, // Default for larger screens (2xl)
     slidesToScroll: 1,
     arrows: false, // Disable default arrows
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -77,48 +77,48 @@ const GameSlide = ({ list }) => {
           return (
             <div
               key={item.id}
-              className=" w-[400px] h-[400px]   2xl:ml-12 ml-5"
+              className="Games_slider_home w-[400px] h-[400px] ml-5"
             >
               <div className="relative">
-                <div className="absolute top-[67px] right-[70px]   xl:right-[44px]  2xl:right-[107px] ">
+                <div className="absolute top-[92px] right-[72px]   xl:right-[44px]  2xl:right-[72px] ">
                   <img src={line} alt="" className="object-cover" />
                 </div>
-                <div className="absolute top-[78px] right-[63px]  xl:right-[49px] 2xl:right-[113px]">
+                <div className="absolute top-[112px] right-[63px]  xl:right-[49px] 2xl:right-[66px]">
                   <img src={lineThird} alt="" className="object-cover" />
                 </div>
-                <div>
-                  <div className="relative">
+                <div className="Slider_top_part">
+                  <div className="relative bg_back_img">
                     <img
                       src={box1}
                       alt=""
-                      className="w-[250px]  h-full object-cover"
+                      className="w-[290px]  h-full object-cover"
                     />
                   </div>
-                  <div className="absolute top-[5%] left-[3%] rounded-lg ">
+                  <div className="fronte_img absolute top-[5%] left-[3%] rounded-lg ">
                     <img
                       src={item.image}
                       alt="Background"
-                      className="w-[224px]  h-full object-cover  "
+                      className="w-[265px]  h-full object-cover  "
                     />
                   </div>
 
                   {/* Title */}
                   <div className=" absolute top-[70%] left-[3%] ">
-                    <h4 className="text-white font-Poppins font-semibold md:text-[22px] text-[18px] uppercase">
+                    <h4 className="text-white font-Poppins font-semibold md:text-[24px] text-[18px] uppercase">
                       {item.title}
                     </h4>
                   </div>
                 </div>
 
                 <div
-                  className="bg-[#7c309c]/70 absolute  -bottom-[42%] left-[10%] pt-1 pl-4 w-[240px] h-[48%]"
+                  className="bg-[#b85cff]/70 absolute  -bottom-[37%] left-[8%] pt-1 pl-4 w-[280px] h-[48%]"
                   style={{
                     boxShadow: "0px 3px 19px #000000",
                     borderRadius: "10px",
                   }}
                 >
                   <div className="flex justify-start items-center gap-7">
-                    <p className="text-white text-[10px] font-Poppins uppercase  font-semibold">
+                    <p className="text-white text-[12px] font-Poppins uppercase  font-semibold">
                       {item.ratingText}
                     </p>
                     <div className="flex items-center ">
@@ -130,14 +130,14 @@ const GameSlide = ({ list }) => {
                     </div>
                   </div>
 
-                  <p className="text-[8px] font-Poppins leading-3  text-white pt-4">
+                  <p className="text-[9px] font-Poppins leading-4  text-white pt-4">
                     {item.body}
                   </p>
                 </div>
               </div>
 
               <div className=" relative flex justify-center items-center mt-28">
-                <button className="ml-[54px] 2xl:ml-0  bg-[#511e8a] rounded-full text-white  px-6 py-1 text-[8px] font-Poppins font-medium  gap-2 flex justify-center items-center">
+                <button className="ml-[50px] bg-[#511e8a] rounded-full text-white  px-6 py-1 text-[8px] font-Poppins font-medium  gap-1 flex justify-center items-center">
                   <img
                     src={item.link}
                     alt=""
@@ -145,7 +145,7 @@ const GameSlide = ({ list }) => {
                   />{" "}
                   {item.linkName}
                 </button>
-                <button className="absolute  left-7 bg-white rounded-full text-primary py-2 px-[14px] text-[13px] font-Poppins font-bold uppercase tracking-wide">
+                <button className="absolute  left-7 bg-white rounded-full text-primary py-2 px-[25px] text-[14px] font-Poppins font-bold uppercase tracking-wide">
                   {item.button}
                 </button>
 

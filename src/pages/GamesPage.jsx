@@ -111,7 +111,7 @@ const GamesPage = ({onMount}) => {
                 }}
               >
                 <p
-                  className="uppercase font-Poppins tracking-widest font-semibold text-[18px]"
+                  className="uppercase font-Poppins tracking-widest font-semibold text-[26px]"
                   style={{
                     transform: "skew(35deg)", // Opposite skew to keep text straight
                     OTransform: "skew(35deg)",
@@ -131,7 +131,7 @@ const GamesPage = ({onMount}) => {
         </div>
         <div className="flex justify-center items-center pb-10">
           <div
-            className=" md:w-[280px] w-[230px] md:h-[60px] h-[50px] flex justify-center items-center cursor-pointer  rounded-md"
+            className=" md:w-[280px] mt-8 w-[230px] md:h-[60px] h-[50px] flex justify-center items-center cursor-pointer  rounded-md"
             style={{
               background: "#FF0091",
               transform: "skew(-35deg)",
