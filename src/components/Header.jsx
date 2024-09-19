@@ -47,7 +47,7 @@ const Header = ({ onMount }) => {
           <div className="flex  justify-center items-center gap-10">
             <ul className=" hidden lg:flex  justify-center items-center gap-8 Site_menu_main">
               <li className="font-Poppins font-bold text-[13px] tracking-widest uppercase cursor-pointer">
-                {item.navlink1}
+                <a href="https://www.facebook.com">{item.navlink1}</a>
               </li>
               <li className="font-Poppins font-bold text-[13px] uppercase">
                 |
