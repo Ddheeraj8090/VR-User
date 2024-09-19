@@ -441,6 +441,87 @@ button.absolute.left-7.bg-white.rounded-full.text-primary.py-2.px-\[25px\].text-
   color: #69339a;
 }
 
+.maps {
+  position: relative;
+}
+
+.maps .img {
+  left: 0px;
+  position: absolute;
+  z-index: 0;
+  top: -190px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.VR_THEME_PARK_MAIN {
+  position: relative;
+  z-index: 2;
+}
+
+.maps .img img {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  height: 1340px;
+  object-fit: contain;
+}
+
+.pin_img_map {
+  top: 248px !important;
+  text-align: left !important;
+  right: -246px !important;
+}
+
+.pin_img_map img {
+  width: 285px !important;
+}
+
+.maps {
+  background-image: url(./assets/Map_BG.png);
+  background-repeat: no-repeat;
+}
+
+.Direction_btn {
+  border-radius: 10px;
+}
+
+.Direction_btn p {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.review_box_inner {
+  padding: 20px 25px 10px;
+}
+
+.happy_cliets_main{
+  background-image: url(./assets/Our_clients_bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+}
+
+.slider_our_clients_page button.slick-arrow {
+  display: none !important;
+}
+
+.happy_client_top_main {
+  padding: 0 0px 0px 80px;
+}
+
+p.client_page_slider_para {
+  padding-right: 50px;
+}
+
+.slider_our_clients_page img {
+  width: 98%;
+}
+
+form.Contact_form label {
+  font-size: 16px;
+}
 
 /* Dinesh_responsive_css_start */
 

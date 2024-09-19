@@ -153,7 +153,7 @@ const ContactUs = () => {
                     <input
                       type="text"
                       placeholder="Enter Your Name Here"
-                      className="bg-white w-[300px] placeholder:text-[12px] rounded-r-full py-1 px-2 rounded-bl-full"
+                      className="bg-white w-[300px] placeholder:text-[16px] rounded-r-full py-1 px-2 rounded-bl-full"
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
@@ -169,7 +169,7 @@ const ContactUs = () => {
                     <input
                       type="date"
                       placeholder="Enter Your Date Of Birth"
-                      className="bg-white placeholder:text-[12px] rounded-r-full py-1 px-2 rounded-bl-full"
+                      className="bg-white placeholder:text-[16px] rounded-r-full py-1 px-2 rounded-bl-full"
                       name="dob"
                       value={
                         formData.dob
@@ -185,14 +185,14 @@ const ContactUs = () => {
                     )}
                   </div>
                 </div>
-                <div className="flex flex-col justify-start items-start pt-3">
+                <div className="flex flex-col justify-start items-start pt-3 pb-3 mb-3">
                   <label className="font-Poppins text-[12px] md:font-medium pb-1">
                     Email Address
                   </label>
                   <input
                     type="email"
                     placeholder="Enter Your Email Address"
-                    className="bg-white w-full placeholder:text-[12px] rounded-r-full py-1 px-2 rounded-bl-full"
+                    className="bg-white w-full placeholder:text-[16px] rounded-r-full py-1 px-2 rounded-bl-full"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -207,7 +207,7 @@ const ContactUs = () => {
                   </label>
                   <textarea
                     placeholder="Enter Your Review Here"
-                    className="bg-white h-[150px] w-full placeholder:text-[12px] rounded-r-[20px] py-1 px-2 rounded-bl-[40px]"
+                    className="bg-white h-[150px] w-full placeholder:text-[16px] rounded-r-[20px] py-1 px-2 rounded-bl-[40px]"
                     name="review"
                     value={formData.review}
                     onChange={handleInputChange}

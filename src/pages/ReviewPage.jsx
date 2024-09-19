@@ -59,7 +59,7 @@ const ReviewPage = ({onReviewMount}) => {
                 {item.revHeading}
               </h2>
             </div>
-            <span className="md:w-[270px] w-[220px] h-[3px] bg-[#FF00B8]"></span>
+            <span className="md:w-[270px] w-[220px] h-[1px] bg-[#FF00B8]"></span>
           </div>
           <div className="review_page_para lg:w-[60%] w-full flex justify-start items-start">
             <p className="lg:text-[16px] text-[15px] md:font-medium font-Poppins pt-10">
@@ -71,7 +71,7 @@ const ReviewPage = ({onReviewMount}) => {
               {revCards.map((card) => (
                 <div
                   key={card.id}
-                  className="review_box_inner p-[14px] 2xl:h-[300px] 2xl:w-[350px] w-[300px] h-[300px]"
+                  className="review_box_inner p-[14px] 2xl:w-[350px] w-[300px]"
                   style={{
                     background: "#FFFFFF 0% 0% no-repeat padding-box",
                     borderRadius: "14px",

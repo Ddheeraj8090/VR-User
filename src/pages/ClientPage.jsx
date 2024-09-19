@@ -77,19 +77,19 @@ const ClientPage = ({onMount}) => {
   return (
     <div
       className="happy_cliets_main text-white py-10"
-      style={{ backgroundImage: `url(${backicon})` }}
+      // style={{ backgroundImage: `url(${backicon})` }}
     >
       <div
         style={{
           backgroundImage: `url(${top2})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           height: "100%",
           backgroundPosition: "center",
         }}
       >
         {data.map((item, index) => (
-          <div key={index} className="container mx-auto">
+          <div key={index} className="happy_client_top_main mx-auto">
             <div className="heading_client_page flex flex-col justify-center items-center border-t border-t-[#FF00B8]  ">
               <span className="tracking-wider md:text-[36.82px] text-[30px] leading-5 font-bold uppercase font-Poppins pt-10">
                 {item.heading1}

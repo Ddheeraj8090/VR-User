@@ -6,6 +6,7 @@ import mapicons from "../assets/mapicons.png";
 import girls from "../assets/girls.png";
 import LineSecond from "../assets/LineSecond.png";
 import LineFirst from "../assets/LineFirst.png";
+import Mapimg from "../assets/Map_img.png"
 
 const VrThemePark = ({ onMount, onReviewMount }) => {
   const [data, setData] = useState([]);
@@ -46,11 +47,14 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="map"
-          style={{
-            backgroundImage: `url(${mapicons})`,
-          }}
+          className="maps"
+          // style={{
+          //   backgroundImage: `url(${mapicons})`,
+          // }}
         >
+          <div className="img">
+            <img src={Mapimg} alt="" />
+          </div>
           <div
             className="VR_THEME_PARK_MAIN bg-none "
             style={{
@@ -101,7 +105,7 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
                       {item.button}
                     </p>
                   </div>
-                  <div className="absolute lg:top-72 top-32 lg:-right-48 md:-right-32 right-12">
+                  <div className="pin_img_map absolute lg:top-72 top-32 lg:-right-48 md:-right-32 right-12">
                     <img
                       src={"/map.png"}
                       alt=""
