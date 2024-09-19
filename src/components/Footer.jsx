@@ -154,36 +154,40 @@ const Footer = ({onMount}) => {
               </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center gap-3">
+              <div className="flex justify-center items-center gap-2">
                 <div>
-                  <img src={item.contactUslinkImages.img1} alt="" />
+                  <a href="" target="_black"><img src={item.contactUslinkImages.img1} alt="" /></a>
                 </div>
                 <div>
-                  <img src={item.contactUslinkImages.img2} alt="" />
+                  <a href="" target="_black"><img src={item.contactUslinkImages.img2} alt="" /></a>
                 </div>
                 <div>
-                  <img src={item.contactUslinkImages.img3} alt="" />
+                  <a href="" target="_black"><img src={item.contactUslinkImages.img4} alt="" /></a>
                 </div>
                 <div>
-                  <img src={item.contactUslinkImages.img4} alt="" />
+                  <a href="" target="_black"><img src={item.contactUslinkImages.img3} alt="" /></a>
                 </div>
+               
               </div>
             </div>
-            <div className="we_are_footer_heading">
-              <h3 className="uppercase font-Poppins font-medium tracking-widest text-[25px] text-center">
+            <div className="we_are_footer_heading mt-5">
+              <h3 className="uppercase font-Poppins font-bold tracking-widest text-[20px] text-center">
                 {item.featuredTitle}
               </h3>
             </div>
             <div className="news_logos flex flex-col justify-center items-center gap-5 py-12">
-              <div className="flex flex-wrap justify-center items-center gap-9 ">
+              <div className="flex flex-wrap justify-center items-center gap-9 mb-10">
                 <img src={item.contactUsFeaturedImages.img1} alt="" />
                 <img src={item.contactUsFeaturedImages.img2} alt="" />
-                <img src={item.contactUsFeaturedImages.img3} alt="" />
+                <img src={item.contactUsFeaturedImages.img6} alt="" />
+                
               </div>
               <div className="flex flex-wrap justify-center items-center gap-9">
+              <img src={item.contactUsFeaturedImages.img3} alt="" />
                 <img src={item.contactUsFeaturedImages.img4} alt="" />
                 <img src={item.contactUsFeaturedImages.img5} alt="" />
-                <img src={item.contactUsFeaturedImages.img6} alt="" />
+                
+                
               </div>
             </div>
             {footerData.map((element, index) => (
@@ -193,69 +197,71 @@ const Footer = ({onMount}) => {
               >
                 <ul className="fooetr_menu_inner one flex flex-col justify-center items-center gap-3">
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink1}
+                    <a href="">{element.navLink1}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink2}
+                    <a href="">{element.navLink2}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink3}
+                    <a href="">{element.navLink3}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink4}
+                    <a href="">{element.navLink4}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink5}
+                    <a href="">{element.navLink5}</a>
                   </li>
                 </ul>
                 <div className="Footer_menu_logo flex flex-col justify-center items-center gap-2">
-                  <img
+                 <a href="">
+                 <img
                     src={element.image}
                     alt=""
                     className="h-full w-[170px] object-content"
                   />
+                 </a>
                   <p className="font-Poppins text-[14px] text-gray-400 text-center pt-5 ">
                     {element.body}
                   </p>
                 </div>
                 <ul className="fooetr_menu_inner  flex flex-col justify-center items-center gap-3">
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink6}
+                    <a href="">{element.navLink6}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink7}
+                    <a href="">{element.navLink7}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink8}
+                    <a href="">{element.navLink8}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink9}
+                    <a href="">{element.navLink9}</a>
                   </li>
                   <li className="font-Poppins text-gray-400 text-center tracking-wider">
-                    {element.navLink10}
+                   <a href=""> {element.navLink10}</a>
                   </li>
                 </ul>
               </div>
             ))}
             <ul className="Footer_social_icons flex justify-center items-center gap-8 pt-10  pb-20">
               <li>
-                <FaFacebookF className="text-[20px] font-bold" />
+                <a href=""><FaFacebookF className="text-[20px] font-bold" /></a>
               </li>
               <li>
-                <FaTwitter className="text-[20px] font-bold" />
+                <a href=""><FaTwitter className="text-[20px] font-bold" /></a>
               </li>
               <li>
-                <FaPinterestP className="text-[20px] font-bold" />
+                <a href=""><FaPinterestP className="text-[20px] font-bold" /></a>
               </li>
               <li>
-                <FaYoutube className="text-[20px] font-bold" />
+                <a href=""><FaYoutube className="text-[20px] font-bold" /></a>
               </li>
               <li>
-                <FaInstagram className="text-[20px] font-bold" />
+                <a href=""><FaInstagram className="text-[20px] font-bold" /></a>
               </li>
 
               <li>
-                <FaWifi className="text-[20px] font-bold" />
+                <a href=""><FaWifi className="text-[20px] font-bold" /></a>
               </li>
             </ul>
           </div>

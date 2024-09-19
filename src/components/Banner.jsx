@@ -14,7 +14,7 @@ const Banner = ({ caraousel, slides }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
     responsive: [

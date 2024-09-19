@@ -523,6 +523,31 @@ form.Contact_form label {
   font-size: 16px;
 }
 
+.Bottom_form_tc .text-red-500.text-sm {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid red;
+  margin: 20px 0 10px;
+  border-radius: 10px;
+}
+
+.Bottom_form_tc .flex.justify-center.items-center.gap-3 {
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 0;
+}
+
+.Bottom_form_tc {
+  align-items: baseline;
+}
+
+.Insta_feed_img_box {
+  gap: 10px;
+  margin: 0 0 10px;
+}
+
 /* Dinesh_responsive_css_start */
 
 @media (max-width: 991px) {
@@ -1063,6 +1088,78 @@ ul.Footer_social_icons {
 .menu_footer_main .Footer_menu_logo p {
   color: #fff;
   padding: 5px 0 0px;
+}
+
+.header_buttons {
+  width: auto;
+  padding: 6px 10px !important;
+}
+
+.Hero_banner_inner .BG-IMG_MAIN img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.banner_bottom_btn .flex.flex-row.justify-center.items-center.gap-4 {
+  width: 100%;
+}
+
+.Direction_button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.banner_bottom_btn .flex.flex-col.md\:flex-row.justify-center.items-center.gap-4 {
+  width: 100% !important;
+}
+
+.banner_bottom_btn .flex.flex-col.md\:flex-row.justify-center.items-center.gap-4 .offers_running_text {
+  width: 100%;
+}
+
+.relative.Why_vr.text-white.mt-10 {}
+
+.Why_vr p.md\:text-\[16\.67px\].text-\[14px\].leading-6.font-Poppins {
+  text-align: justify;
+}
+
+.Games_slider_home {height: auto;margin-bottom: 30px;}
+
+.Games_slider_home button.ml-\[50px\].bg-\[\#511e8a\].rounded-full.text-white.px-6.py-1.text-\[8px\].font-Poppins.font-medium.gap-1.flex.justify-center.items-center {
+  margin-left: 75px;
+}
+
+.banner1 button.slick-arrow {
+  display: none !important;
+}
+
+.banner1 .flex.absolute.top-40.right-10.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 {
+  display: none;
+}
+
+.maps .img img {
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.happy_client_top_main {
+  padding: 0 15px 0 15px;
+}
+
+.contact_tp_form_main form.Contact_form .Bottom_form_tc .flex.justify-center.items-center.gap-3 p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+form.Contact_form .Bottom_form_tc input {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.news_logos .flex.flex-wrap.justify-center.items-center.gap-9 {
+  margin: 0 0 7px;
 }
 
 }
