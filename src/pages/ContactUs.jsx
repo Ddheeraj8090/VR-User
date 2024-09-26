@@ -91,10 +91,8 @@ const ContactUs = () => {
             review: "",
             termsAccepted: false,
           });
-          // console.log("Form submitted successfully:", response.data);
-          alert("Review sent successfully!");
+          alert("Thank you! Your form has been submitted successfully and we will get back to you shortly.");
         } else {
-          // console.log("Form submission unsuccessful", response.data);
           alert("error submitting review!",response.data.message);
         }
       } catch (err) {
@@ -246,11 +244,11 @@ const ContactUs = () => {
             </form>
           </div>
           <div className="md:w-[50%] w-full md:pt-[100px]">
-            <img
+            <a href={item.imageEditLink}><img
               src={item.image}
               alt=""
               className="w-full h-full object-cover"
-            />
+            /></a>
           </div>
         </div>
       </div>

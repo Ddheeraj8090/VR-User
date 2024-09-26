@@ -162,7 +162,7 @@ const HeroPages = ({ onMount }) => {
                       WebkitTransform: "skew(35deg)",
                     }}
                   >
-                    {item.button1}
+                    <a href={item.button1Link}>{item.button1}</a>
                   </p>
                   <GoDotFill
                     className="dot_icon_button text-[#E2FF46]  md:text-[35px] text-[16px]"
@@ -202,7 +202,7 @@ const HeroPages = ({ onMount }) => {
                       WebkitTransform: "skew(35deg)",
                     }}
                   >
-                    {item.button2}
+                    <a href={item.button2Link}>{item.button2}</a>
                   </p>
                 </div>
               </div>
@@ -259,7 +259,7 @@ const HeroPages = ({ onMount }) => {
                       WebkitTransform: "skew(35deg)",
                     }}
                   >
-                    {item.button3}
+                    <a href={item.button3Link}>{item.button3}</a>
                   </p>
                 </div>
               </div>

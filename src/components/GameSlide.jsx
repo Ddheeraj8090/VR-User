@@ -143,10 +143,10 @@ const GameSlide = ({ list }) => {
                     alt=""
                     className="w-[16px] h-[16px] object-contain"
                   />{" "}
-                  {item.linkName}
+                  <a href={item.linkUrl}>{item.linkName}</a>
                 </button>
                 <button className="absolute  left-7 bg-white rounded-full text-primary py-2 px-[25px] text-[14px] font-Poppins font-bold uppercase tracking-wide">
-                  {item.button}
+                  <a href={item.buttonLink}>{item.button}</a>
                 </button>
 
                 <div className="absolute -top-28 left-3">

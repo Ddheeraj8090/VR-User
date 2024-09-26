@@ -47,36 +47,36 @@ const Header = ({ onMount }) => {
           <div className="flex  justify-center items-center gap-10">
             <ul className=" hidden lg:flex  justify-center items-center gap-8 Site_menu_main">
               <li className="font-Poppins font-bold text-[13px] tracking-widest uppercase cursor-pointer">
-                <a href="https://www.facebook.com">{item.navlink1}</a>
+                <a href={item.navEditLink1}>{item.navlink1}</a>
               </li>
               <li className="font-Poppins font-bold text-[13px] uppercase">
                 |
               </li>
               <li className="font-Poppins font-bold text-[13px] tracking-widest uppercase cursor-pointer">
-                {item.navlink2}
+                <a href={item.navEditLink2}>{item.navlink2}</a>
               </li>
               <li className="font-Poppins font-bold text-[13px] uppercase">
                 |
               </li>
               <li className="font-Poppins font-bold text-[13px] tracking-widest uppercase cursor-pointer">
-                {item.navlink3}
+                <a href={item.navEditLink3}>{item.navlink3}</a>
               </li>
               <li className="font-Poppins font-bold text-[13px] uppercase">
                 |
               </li>
               <li className="font-Poppins font-bold text-[13px] tracking-widest uppercase cursor-pointer">
-                {item.navlink4}
+                <a href={item.navEditLink4}>{item.navlink4}</a>
               </li>
             </ul>
             <div className="flex justify-center items-center gap-3">
               <div className="nav_btn   md:py-[8px] md:px-[20px] py-[5px] px-[12px] header_buttons">
                 <span className="uppercase font-Poppins md:tracking-wider cursor-pointer font-bold md:text-[16px] text-[12px]">
-                  {item.buttonText1}
+                  <a href={item.buttonEditText1}>{item.buttonText1}</a>
                 </span>
               </div>
               <div className="nav_btn md:py-[8px] md:px-[20px] py-[5px] px-[12px] header_buttons">
                 <span className="uppercase font-Poppins md:tracking-wider cursor-pointer font-bold md:text-[16px] text-[12px]">
-                  {item.buttonText2}
+                  <a href={item.buttonEditText2}>{item.buttonText2}</a>
                 </span>
               </div>
             </div>

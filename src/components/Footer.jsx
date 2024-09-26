@@ -86,7 +86,7 @@ const Footer = ({onMount}) => {
                 </div>
                 <div className=" 2xl:ml-80 xl:ml-72">
                   <button className="rounded-md p-3 text-[14px] font-Poppins font-semibold text-white bg-blue-400 uppercase tracking-wider">
-                    {item.contactUsButton.buttonText}
+                    <a href={item.contactUsButton.buttonLink}>{item.contactUsButton.buttonText}</a>
                   </button>
                 </div>
               </div>

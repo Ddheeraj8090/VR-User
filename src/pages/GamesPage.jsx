@@ -149,7 +149,7 @@ const GamesPage = ({onMount}) => {
                 WebkitTransform: "skew(35deg)",
               }}
             >
-              {item.button}
+              <a href={item.buttonEditLink}>{item.button}</a>
             </p>
           </div>
         </div>

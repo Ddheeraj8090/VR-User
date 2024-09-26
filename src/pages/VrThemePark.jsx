@@ -102,7 +102,7 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
                         WebkitTransform: "skew(35deg)",
                       }}
                     >
-                      {item.button}
+                      <a href={item.buttonLink}>{item.button}</a>
                     </p>
                   </div>
                   <div className="pin_img_map absolute lg:top-72 top-32 lg:-right-48 md:-right-32 right-12">

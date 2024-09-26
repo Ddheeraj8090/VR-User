@@ -34,10 +34,10 @@ const BannerSlide = ({ caraousel, slide }) => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <button className="bg-primary rounded-md text-white p-3 text-[15px] font-Poppins font-semibold uppercase tracking-wider">
-                    {item.button1}
+                    <a href={item.button1EditLink}>{item.button1}</a>
                   </button>
                   <button className="bg-white rounded-md text-primary p-3 text-[15px] font-Poppins font-semibold uppercase tracking-wider">
-                    {item.button2}
+                    <a href={item.button2EditLink}>{item.button2}</a>
                   </button>
                 </div>
                 <div className="slider_last_img">
