@@ -548,6 +548,10 @@ form.Contact_form label {
   margin: 0 0 10px;
 }
 
+.banner1 button.slick-arrow {
+    display: none !important;
+}
+
 /* Dinesh_responsive_css_start */
 
 @media (max-width: 991px) {

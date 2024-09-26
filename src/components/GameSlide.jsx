@@ -153,7 +153,7 @@ const GameSlide = ({ list }) => {
                   <div className="relative">
                     <div className="bg-[#7c309c] w-[2px] h-32"></div>
 
-                    <div className="bg-[#7c309c] w-[15px] h-[2px] absolute bottom-0 left-full "></div>
+                    <div className="bg-[#7c309c] w-[13px] h-[2px] absolute bottom-0 left-full "></div>
                   </div>
                 </div>
               </div>
