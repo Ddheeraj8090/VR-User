@@ -217,9 +217,9 @@ const HeroPages = ({ onMount }) => {
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4">
                   <div
-                    className="offers_running_text flex xl:w-[690px] md:w-[450px] lg:w-[360px] h-[38px] justify-center items-center cursor-pointer  rounded-md"
+                    className="offers_running_text flex xl:w-[690px] md:w-[450px] lg:w-[360px] h-[38px] justify-center items-center"
                     style={{
-                      background: "#761AC2",
+                      background: "#761ac28a",
                       transform: "skew(-35deg)",
                       OTransform: "skew(-35deg)",
                       MozTransform: "skew(-35deg)",

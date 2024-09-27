@@ -80,10 +80,10 @@ const GameSlide = ({ list }) => {
               className="Games_slider_home w-[400px] h-[400px] ml-5"
             >
               <div className="relative">
-                <div className="absolute top-[92px] right-[72px]   xl:right-[44px]  2xl:right-[72px] ">
+                <div className="absolute top-[92px] right-[66px]   xl:right-[44px]  2xl:right-[66px] ">
                   <img src={line} alt="" className="object-cover" />
                 </div>
-                <div className="absolute top-[112px] right-[63px]  xl:right-[49px] 2xl:right-[66px]">
+                <div className="absolute top-[110px] right-[60px]  xl:right-[49px] 2xl:right-[60px]">
                   <img src={lineThird} alt="" className="object-cover" />
                 </div>
                 <div className="Slider_top_part">

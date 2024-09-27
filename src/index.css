@@ -102,7 +102,7 @@
 }
 
 form.Contact_form input {
-  padding: 10px 15px 10px;
+  padding: 8px 8px 8px;
   color: #000;
   outline: none;
   height: 50px;
@@ -128,8 +128,8 @@ form.Contact_form .Bottom_form_tc .flex.justify-start.items-center.gap-3 {
 }
 
 form.Contact_form .Bottom_form_tc input {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-right: 15px;
 }
 
@@ -230,7 +230,7 @@ form.Contact_form   {
   position: relative;
   width: 33%;
   height: 90px;
-  margin: 40px auto 40px;
+  margin: 50px auto 50px;
   justify-content: space-between;
   padding: 0 10px;
 }
@@ -507,8 +507,13 @@ button.absolute.left-7.bg-white.rounded-full.text-primary.py-2.px-\[25px\].text-
   display: none !important;
 }
 
-.happy_client_top_main {
-  padding: 0 0px 0px 80px;
+.happy_client_top_main .slider_our_clients_page {
+  padding-left: 80px;
+}
+
+.heading_client_page {
+  margin: auto;
+  width: 70%;
 }
 
 p.client_page_slider_para {
@@ -552,7 +557,64 @@ form.Contact_form label {
     display: none !important;
 }
 
+.Why_vr h3.uppercase.text-center.md\:text-\[27\.78px\].text-\[24px\].font-Poppins.font-bold.tracking-wider.text-white {
+  letter-spacing: 8px;
+}
+
+.AT-YOUR-NEAREST .w-4.h-4 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.happy_client_top_main p.client_page_slider_para {
+  padding-left: 80px;
+}
+
+.Games_to_explore .Games_to_explore_inner.Bottom_inner .container.mx-auto {
+  z-index: 1;
+  position: relative;
+}
+
+.Games_to_explore .Games_to_explore_inner.Bottom_inner .flex.justify-center.items-center.pb-10 {
+  z-index: 1;
+  position: relative;
+}
+
 /* Dinesh_responsive_css_start */
+
+
+@media (max-width: 1560px){
+  .Site_menu_main {
+    margin: 0;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.-right-16 {
+  right: -30px !important;
+}
+
+/* .adventure_boxes {
+  width: 50% !important;
+} */
+
+.Site_header.text-white .nav_btn {
+    width: 150px;
+}
+}
+
+@media (max-width: 1320px){
+  .adventure_boxes {
+    width: 65% !important;
+
+  }
+
+
+
+  .Hero_banner_inner .hero_banner_contant .lg\:w-\[50\%\].flex.justify-center.items-center.lg\:justify-start.lg\:items-start.w-full.xl\:ml-40{
+    margin-left: 50px !important;
+  }
+}
 
 @media (max-width: 991px) {
   .sec1BG {
