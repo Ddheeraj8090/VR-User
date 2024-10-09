@@ -580,6 +580,11 @@ form.Contact_form label {
   position: relative;
 }
 
+p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
 /* Dinesh_responsive_css_start */
 
 
@@ -594,6 +599,7 @@ form.Contact_form label {
   right: -30px !important;
 }
 
+
 /* .adventure_boxes {
   width: 50% !important;
 } */
@@ -603,7 +609,7 @@ form.Contact_form label {
 }
 }
 
-@media (max-width: 1320px){
+@media (max-width: 1360px){
   .adventure_boxes {
     width: 65% !important;
 
@@ -616,7 +622,7 @@ form.Contact_form label {
   }
 }
 
-@media (max-width:1360px){
+@media (max-width:1340px){
   .Hero_banner_inner .hero_banner_contant {
     height: 60vh;
 }
@@ -687,7 +693,7 @@ p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[16px\].text-\[
 }
 
 .AT-YOUR-NEAREST {
-  width: 43%;
+  width: 35%;
 }
 
 .AT-YOUR-NEAREST h3.font-Poppins.font-bold.text-\[24\.66px\].text-white {
@@ -841,14 +847,19 @@ p.lg\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-10 {
 }
 
 .contact_tp_form_main .md\:w-\[50\%\].w-full {
-  width: 65% !important;
+  width: 51% !important;
 }
 
 
 .contact_tp_form_main .md\:w-\[50\%\].w-full.md\:pt-\[100px\] {
-  width: 35% !important;
+  width: 47% !important;
   padding: 0;
   margin: 0 0 50px;
+}
+
+.contact_tp_form_main {
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .contact_tp_form_main form.Contact_form {
@@ -878,12 +889,132 @@ p.lg\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-10 {
   margin: 0 0 20px;
 }
 
+.booton-icons-why-vr {width: 100%;gap: 0 !important;padding: 30px 20px !important;padding-top: 1.25rem !important;padding-bottom: 1.25rem;}
+
+.Icon_boxes_main {width: 70%;margin: auto;}
+
+.booton-icons-why-vr .Boxes_icon_inner {
+    width: 20%;
 }
 
-@media (max-width:1120px){
+.Why_vr p.md\:text-\[16\.67px\].text-\[14px\].leading-6.font-Poppins {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Games_slider_home .absolute.top-\[92px\].right-\[66px\].xl\:right-\[44px\].\32 xl\:right-\[66px\] {
+  right: 33px !important;
+}
+
+.Games_slider_home .absolute.top-\[110px\].right-\[60px\].xl\:right-\[49px\].\32 xl\:right-\[60px\] {
+  right: 23px !important;
+}
+
+.maps .img {
+  top: -260px;
+}
+
+.game-slider-main .hidden.xl\:flex.absolute.top-40.-right-16.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 {
+  display: block;
+  padding: 10px;
+  right: -20px !important;
+}
+
+p.font-Poppins.md\:text-\[16\.67px\].text-\[15px\].md\:font-medium.md\:pl-40.pt-6 {
+  font-size: 14px;
+}
+
+.pin_img_map img {
+  width: 190px !important;
+}
+
+.pin_img_map {
+  right: -10.5rem !important;
+  top: 225px !important;
+}
+
+.VR_THEME_PARK_MAIN {
+  background-position: 0 210px !important;
+}
+
+.VR_THEME_PARK_MAIN {
+  background-position: 0 210px;
+}
+
+.happy_client_top_main .slider_our_clients_page {
+  padding-left: 0;
+}
+
+.happy_client_top_main p.client_page_slider_para {
+  padding: 0;
+}
+
+.VR_THEME_PARK_MAIN {
+  background-position: 0 210px;
+}
+
+.happy_client_top_main .slider_our_clients_page {
+  padding-left: 0;
+}
+
+.happy_client_top_main p.client_page_slider_para {
+  padding: 10px 0 0;
+}
+
+.review_main.review_box {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.review_main.review_box .review_box_inner {
+  width: 100%;
+}
+
+h1.Review_heading {
+  font-size: 24px;
+}
+
+p.msg {
+  font-size: 12px;
+}
+
+.review_main .icon {
+  padding-top: 40px;
+}
+
+.review_main .icon p.date {
+  font-size: 14px;
+}
+
+.Direction_btn {
+  bottom: 75px;
+  right: -25px;
+}
+
+.Direction_btn {
+  bottom: 75px;
+  right: -25px;
+}
+
+.Insta_feed_img_box > div {
+  width: 100%;
+}
+
+.Insta_feed_img_box > div img {
+  width: 100%;
+}
+
+
+}
+
+@media (max-width:1240px){
   .Hero_banner_inner .BG-IMG_MAIN {
     height: 100vh;
 } 
+
+.AT-YOUR-NEAREST {
+  width: 43%;
+}
+
 }
 
 @media (max-width: 991px) {
