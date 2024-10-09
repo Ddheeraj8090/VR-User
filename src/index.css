@@ -917,7 +917,7 @@ p.lg\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-10 {
 .game-slider-main .hidden.xl\:flex.absolute.top-40.-right-16.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 {
   display: block;
   padding: 10px;
-  right: -20px !important;
+  right: -40px!important;
 }
 
 p.font-Poppins.md\:text-\[16\.67px\].text-\[15px\].md\:font-medium.md\:pl-40.pt-6 {
@@ -950,7 +950,7 @@ p.font-Poppins.md\:text-\[16\.67px\].text-\[15px\].md\:font-medium.md\:pl-40.pt-
 }
 
 .VR_THEME_PARK_MAIN {
-  background-position: 0 210px;
+  background-position: 0 210px !important;
 }
 
 .happy_client_top_main .slider_our_clients_page {
@@ -1001,6 +1001,11 @@ p.msg {
 
 .Insta_feed_img_box > div img {
   width: 100%;
+}
+
+p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
+  font-size: 12px;
+  padding-top: 5px;
 }
 
 
