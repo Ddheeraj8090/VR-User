@@ -30,7 +30,7 @@ const GameSlide = ({ list }) => {
       {
         breakpoint: 1280, // For screens smaller than xl (1280px)
         settings: {
-          slidesToShow: 4, // Show 3 slides on xl screens
+          slidesToShow: 3, // Show 3 slides on xl screens
         },
       },
       {

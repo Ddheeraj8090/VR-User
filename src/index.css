@@ -616,6 +616,276 @@ form.Contact_form label {
   }
 }
 
+@media (max-width:1360px){
+  .Hero_banner_inner .hero_banner_contant {
+    height: 60vh;
+}
+
+.Hero_banner_inner .hero_banner_contant .lg\:w-\[50\%\].flex.justify-center.items-center.lg\:justify-start.lg\:items-start.w-full.xl\:ml-40 {
+  margin: 0 !important;
+  width: 57%;
+}
+
+/* .Hero_banner_inner .BG-IMG_MAIN {
+    height: 80vh;
+} */
+
+.Hero_banner_inner .BG-IMG_MAIN img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner_bottom_btn .flex.flex-row.justify-center.items-center.gap-4 .flex.items-center.cursor-pointer.rounded-md {
+    padding: 0 15px;
+    height: 55px;
+}
+
+.banner_bottom_btn .flex.flex-row.justify-center.items-center.gap-4 .flex.items-center.cursor-pointer.rounded-md p {
+    font-size: 14px;
+}
+
+.Direction_button svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[16px\].text-\[14px\] {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.live_btn p {
+    font-size: 12px;
+}
+
+.Site_header ul.Site_menu_main li {
+    font-size: 12px;
+}
+
+.Site_header ul.Site_menu_main {
+    gap: 15px;
+}
+
+.Site_header.text-white .nav_btn {
+    width: 110px;
+    padding: 8px !important;
+}
+
+.Site_header.text-white .nav_btn span {
+    font-size: 14px;
+}
+
+.Why_vr h3.uppercase.text-center.md\:text-\[27\.78px\].text-\[24px\].font-Poppins.font-bold.tracking-wider.text-white {
+  font-size: 22px;
+}
+
+.cars_inner_main h2 {
+  font-size: 22px;
+  margin: 3px 0 0px;
+}
+
+.AT-YOUR-NEAREST {
+  width: 43%;
+}
+
+.AT-YOUR-NEAREST h3.font-Poppins.font-bold.text-\[24\.66px\].text-white {
+  font-size: 20px;
+}
+
+.AT-YOUR-NEAREST h3 span.text-\[15px\].inline-block {
+  font-size: 14px;
+}
+
+.AT-YOUR-NEAREST h3 span.inline-block {
+  font-size: 10px;
+}
+
+.Games_to_explore_inner h3 {
+  font-size: 22px;
+}
+
+.Games_to_explore_inner p.uppercase.font-Poppins.tracking-widest.font-semibold.text-\[26px\] {
+  font-size: 20px;
+}
+
+.Games_to_explore_inner h3.tracking-widest.font-Poppins.font-bold.uppercase {
+  font-size: 20px;
+}
+
+.Hot_running_slider .textts {
+  margin: 0 10px 0 0px;
+}
+
+.Hot_running_slider .textts h3 {
+  font-size: 16px;
+}
+
+.Hot_running_slider .textts p {
+  font-size: 32px;
+  display: block;
+}
+
+.Banner_offer .flex.flex-col.justify-center.items-center.pt-3 h3 {
+  font-size: 70px;
+}
+
+.Banner_offer span.bg-\[\#FF0091\].uppercase.px-10.py-2.rounded-full.text-\[15px\].tracking-wider.font-Poppins.font-bold.text-white.transition-all.duration-500.ease-in-out {
+  padding: 10px 0px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+button.bg-white.rounded-md.text-primary.p-3.text-\[15px\].font-Poppins.font-semibold.uppercase.tracking-wider {font-size: 12px;}
+
+button.bg-primary.rounded-md.text-white.p-3.text-\[15px\].font-Poppins.font-semibold.uppercase.tracking-wider {
+  font-size: 12px;
+}
+
+.banner1 .flex.absolute.top-40.right-10.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 {
+  right: 10px;
+  width: 50px;
+  height: 30px;
+}
+
+.banner1 .flex.absolute.top-40.right-10.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 svg {
+  width: 15px;
+  height: 15px;
+}
+
+.banner1 {
+  padding: 15px 0;
+}
+
+.Games_slider_home button.ml-\[50px\].bg-\[\#511e8a\].rounded-full.text-white.px-6.py-1.text-\[8px\].font-Poppins.font-medium.gap-1.flex.justify-center.items-center {
+  margin-left: 86px;
+}
+
+p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].text-\[20px\] {
+  font-size: 20px;
+}
+
+.md\:w-\[280px\].mt-8.w-\[230px\].md\:h-\[60px\].h-\[50px\].flex.justify-center.items-center.cursor-pointer.rounded-md {
+  width: 250px;
+  padding: 0 15px 0;
+  height: 50px;
+}
+
+.heading_vr_theme_park_main h2.lg\:text-\[52px\].text-\[40px\].font-Poppins.font-semibold.leading-\[52px\] {
+  font-size: 34px;
+}
+
+.heading_vr_theme_park_main p.subheading_ve-tp.md\:text-\[20px\].text-\[18px\].font-Poppins.md\:font-medium {
+  font-size: 16px;
+}
+
+.heading_vr_theme_park_main p.para_vr_tp {
+  font-size: 12px;
+}
+
+.Direction_btn {
+  right: -7rem;
+  padding: 0;
+  height: 50px;
+}
+
+.Direction_btn p {
+  font-size: 16px;
+}
+
+p.lg\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-10 {
+  font-size: 14px;
+}
+
+.heading_client_page span.tracking-wider {
+  font-size: 24px;
+}
+
+.heading_client_page h2 {
+  font-size: 34px;
+  padding-top: 3px;
+}
+
+.happy_client_top_main .slider_our_clients_page {
+  padding-top: 20px;
+}
+
+.happy_client_top_main p.client_page_slider_para {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.about_tp_heading h4 {
+  font-size: 24px;
+}
+
+.about_tp_heading h2 {
+  font-size: 34px;
+}
+
+.abt_tp_img_bottom p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+.contact_tp_form_main {
+  padding: 20px 0;
+  align-items: center;
+}
+
+.contact_tp_heading h3 {
+  font-size: 34px;
+}
+
+.contact_tp_form_main .md\:w-\[50\%\].w-full {
+  width: 65% !important;
+}
+
+
+.contact_tp_form_main .md\:w-\[50\%\].w-full.md\:pt-\[100px\] {
+  width: 35% !important;
+  padding: 0;
+  margin: 0 0 50px;
+}
+
+.contact_tp_form_main form.Contact_form {
+  padding: 20px 0;
+}
+
+.top_heading_insta {
+  justify-content: unset;
+}
+
+.top_heading_insta .flex.gap-3.justify-center.items-center.xl\:ml-\[410px\].\32 xl\:ml-\[440px\] {
+  width: 60%;
+  justify-content: end;
+}
+
+.top_heading_insta .\32 xl\:ml-80.xl\:ml-72 {
+  width: 40%;
+  justify-content: end;
+  display: flex;
+}
+
+.news_logos {
+  gap: 0;
+}
+
+.news_logos .flex.flex-wrap.justify-center.items-center.gap-9.mb-10 {
+  margin: 0 0 20px;
+}
+
+}
+
+@media (max-width:1120px){
+  .Hero_banner_inner .BG-IMG_MAIN {
+    height: 100vh;
+} 
+}
+
 @media (max-width: 991px) {
   .sec1BG {
     /* background-image: none; */
@@ -692,8 +962,8 @@ form.Contact_form label {
 }
 
 .AT-YOUR-NEAREST {
-  width: 95%;
-  height: 50px;
+  width: 100%;
+  height: 65px;
   margin: 0px auto 20px;
 }
 
@@ -1157,8 +1427,12 @@ ul.Footer_social_icons {
 }
 
 .header_buttons {
-  width: auto;
-  padding: 6px 10px !important;
+  width: 80px !important;
+  padding: 0 !important;
+}
+
+.Site_header.text-white .nav_btn span {
+  font-size: 12px;
 }
 
 .Hero_banner_inner .BG-IMG_MAIN img {
@@ -1182,8 +1456,6 @@ ul.Footer_social_icons {
 .banner_bottom_btn .flex.flex-col.md\:flex-row.justify-center.items-center.gap-4 .offers_running_text {
   width: 100%;
 }
-
-.relative.Why_vr.text-white.mt-10 {}
 
 .Why_vr p.md\:text-\[16\.67px\].text-\[14px\].leading-6.font-Poppins {
   text-align: justify;
@@ -1227,5 +1499,77 @@ form.Contact_form .Bottom_form_tc input {
 .news_logos .flex.flex-wrap.justify-center.items-center.gap-9 {
   margin: 0 0 7px;
 }
+
+.Hero_banner_inner .hero_banner_contant {
+  height: auto !important;
+}
+
+.Hero_banner_inner .BG-IMG_MAIN {
+  height: auto;
+}
+
+.Hero_banner_inner .hero_banner_contant .lg\:w-\[50\%\].flex.justify-center.items-center.lg\:justify-start.lg\:items-start.w-full.xl\:ml-40 {
+  width: 100%;
+}
+
+.adventure_boxes {
+  width: 100% !important;
+}
+
+.banner_bottom_btn .flex.flex-row.justify-center.items-center.gap-4 .flex.items-center.cursor-pointer.rounded-md {
+  padding: 0 10px;
+  height: 40px;
+}
+
+.banner_bottom_btn .flex.flex-row.justify-center.items-center.gap-4 .flex.items-center.cursor-pointer.rounded-md p {
+  font-size: 11px;
+}
+
+.Why_vr h3.uppercase.text-center.md\:text-\[27\.78px\].text-\[24px\].font-Poppins.font-bold.tracking-wider.text-white {
+  letter-spacing: 3px;
+}
+
+.AT-YOUR-NEAREST h3.font-Poppins.font-bold.text-\[24\.66px\].text-white {
+  font-size: 15px;
+}
+
+.AT-YOUR-NEAREST h3 span.text-\[15px\].inline-block {
+  font-size: 12px;
+}
+
+.Games_to_explore_inner p.uppercase.font-Poppins.tracking-widest.font-semibold.text-\[26px\] {
+  font-size: 16px;
+}
+
+.Games_to_explore_inner h3.tracking-widest.font-Poppins.font-bold.uppercase {
+  font-size: 16px;
+}
+
+.Banner_offer span.bg-\[\#FF0091\].uppercase.px-10.py-2.rounded-full.text-\[15px\].tracking-wider.font-Poppins.font-bold.text-white.transition-all.duration-500.ease-in-out {
+  width: auto;
+  padding: 10px 20px;
+}
+
+.md\:w-\[280px\].mt-8.w-\[230px\].md\:h-\[60px\].h-\[50px\].flex.justify-center.items-center.cursor-pointer.rounded-md {
+  width: 200px;
+  padding: 0;
+}
+
+p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].text-\[20px\] {
+  font-size: 16px;
+}
+
+.contact_tp_form_main .md\:w-\[50\%\].w-full.md\:pt-\[100px\] {
+  width: 100% !important;
+}
+
+.contact_tp_form_main .md\:w-\[50\%\].w-full {
+  width: 100% !important;
+}
+
+.news_logos .flex.flex-wrap.justify-center.items-center.gap-9.mb-10 {
+  margin: 0 0 0;
+}
+
 
 }
