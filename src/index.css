@@ -513,8 +513,10 @@ button.absolute.left-7.bg-white.rounded-full.text-primary.py-2.px-\[25px\].text-
 
 .heading_client_page {
   margin: auto;
-  width: 70%;
+  width: 90%;
 }
+
+
 
 p.client_page_slider_para {
   padding-right: 50px;
@@ -585,6 +587,100 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
   padding-top: 5px;
 }
 
+.Direction_btn {
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background: transparent !important;
+  z-index: 999 !important;
+  margin: 0;
+}
+
+.VR-park_top_img {
+  padding: 0;
+}
+
+.vr_main_contant {
+  height: 30%;
+}
+
+.Direction_btn a {
+  font-size: 0px;
+  width: 650px;
+  display: block;
+  height: 230px;
+  position: absolute;
+  background: #ffffff00;
+  z-index: 999999;
+  padding: 60px;
+  right: -60px;
+  bottom: -190px;
+}
+
+.Review_page_main_top {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+
+.Review_page_main_top .review_page_para p {
+  font-size: 14px;
+  padding-right: 100px;
+}
+
+.Direction_btn p {
+  width: 100%;
+  display: block;
+  font-size: 0;
+  height: 100%;
+}
+
+/* .Direction_btn {
+  bottom: -8%;
+  right: 5%;
+}
+
+.VR_THEME_PARK_MAIN .vr_main_contant .VR-park_top_img {
+  position: relative;
+  padding: 0;
+} */
+
+/* .VR_THEME_PARK_MAIN .VR-park_top_img {
+  height: 990px;
+} */
+
+/* .VR_THEME_PARK_MAIN .VR-park_top_img .pin_img_map {
+  display: none;
+}
+
+.VR_THEME_PARK_MAIN .VR-park_top_img img {
+  display: none;
+}
+
+.maps .img img {
+  display: none;
+} */
+
+
+.VR_THEME_PARK_MAIN {padding: 0;}
+
+.VR_THEME_PARK_MAIN .main_bg_img img {
+    width: 100%;
+    position: relative;
+    top: -140px;
+}
+.VR_THEME_PARK_MAIN .vr_main_contant {
+  position: absolute;
+  top: 60px;
+  max-width: 1536px;
+  margin: 0 auto 0;
+  width: 85%;
+  left: auto;
+  right: auto;
+  height: 41%;
+}
+
 /* Dinesh_responsive_css_start */
 
 
@@ -594,6 +690,28 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
     transition: 0.3s;
     gap: 20px;
 }
+
+.VR-park_top_img {
+  width: 50% !important;
+}
+
+.VR_THEME_PARK_MAIN .main_bg_img img {
+  top: -60px;
+}
+
+.happy_cliets_main {
+  padding-top: 100px;
+}
+
+p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
+  font-size: 12px;
+}
+
+.Review_page_main_top {
+  bottom: -70px;
+}
+
+
 
 .-right-16 {
   right: -30px !important;
@@ -802,7 +920,7 @@ p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].tex
 }
 
 p.lg\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-10 {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .heading_client_page span.tracking-wider {
@@ -1004,7 +1122,7 @@ p.msg {
 }
 
 p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
-  font-size: 12px;
+  font-size: 10px;
   padding-top: 5px;
 }
 
@@ -1018,6 +1136,10 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 
 .AT-YOUR-NEAREST {
   width: 43%;
+}
+
+p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
+  font-size: 8px;
 }
 
 }
@@ -1705,6 +1827,76 @@ p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].tex
 
 .news_logos .flex.flex-wrap.justify-center.items-center.gap-9.mb-10 {
   margin: 0 0 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.happy_cliets_main {
+  padding-top: 100px;
+}
+
+.Review_page_main_top {
+  position: unset;
+}
+
+.Review_page_main_top .review_page_para p {
+  padding-right: 0;
+  font-size: 12px !important;
+}
+
+.VR_THEME_PARK_MAIN .vr_main_contant {
+  position: unset;
+  width: 100%;
+}
+
+p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
+  font-size: 12px;
+  display: none;
+}
+
+.VR-park_top_img {
+  width: 100% !important;
+  order: 1;
+}
+
+.VR_THEME_PARK_MAIN .VR-park_top_img img {
+  display: block !important;
+  height: auto !important;
+  margin: 0 0 -40px;
+}
+
+.VR_THEME_PARK_MAIN .main_bg_img img {
+  display: none;
+}
+
+.happy_cliets_main {
+  padding-top: 10px;
+}
+
+.VR_THEME_PARK_MAIN .Direction_btn {
+  background: #fff !important;
+}
+
+.VR_THEME_PARK_MAIN .Direction_btn a {
+  width: auto;
+  height: 45px;
+  position: unset;
+  padding: 0;
+  font-size: 16px;
+  vertical-align: bottom;
+  align-content: center;
+}
+
+.heading_vr_theme_park_main h2.lg\:text-\[52px\].text-\[40px\].font-Poppins.font-semibold.leading-\[52px\] {
+  font-size: 26px;
+  text-align: center;
+}
+
+.heading_vr_theme_park_main p.subheading_ve-tp.md\:text-\[20px\].text-\[18px\].font-Poppins.md\:font-medium {
+  font-size: 14px;
+  text-align: center;
 }
 
 

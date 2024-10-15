@@ -45,7 +45,7 @@ const ReviewPage = ({onReviewMount}) => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white Review_page_main_top">
       {revData.map((item, index) => (
         <div key={index} className="container mx-auto">
           <div className="Review_page_main flex flex-col justify-center items-center md:justify-start md:items-start gap-[2px] lg:ml-8 pt-10 md:pt-0">

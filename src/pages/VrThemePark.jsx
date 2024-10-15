@@ -7,6 +7,7 @@ import girls from "../assets/girls.png";
 import LineSecond from "../assets/LineSecond.png";
 import LineFirst from "../assets/LineFirst.png";
 import Mapimg from "../assets/Map_img.png"
+import VrBgImg from "../assets/girls.png"
 
 const VrThemePark = ({ onMount, onReviewMount }) => {
   const [data, setData] = useState([]);
@@ -52,19 +53,25 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
           //   backgroundImage: `url(${mapicons})`,
           // }}
         >
-          <div className="img">
+          {/* <div className="img">
             <img src={Mapimg} alt="" />
-          </div>
+          </div> */}
           <div
             className="VR_THEME_PARK_MAIN bg-none "
-            style={{
-              backgroundImage: `url(${girls})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              height: "100%",
-              backgroundPosition: "center",
-            }}
+            // style={{
+            //   backgroundImage: `url(${girls})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "100%",
+            //   height: "100%",
+            //   backgroundPosition: "center",
+            // }}
           >
+
+            <div className="main_bg_img">
+              <div className="img_inner">
+                <img src={VrBgImg} alt="" />
+              </div>
+            </div>
             <div className="LINE_IMG flex flex-col absolute top-2 ">
               <div className="relative">
                 <div>
@@ -76,13 +83,13 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
               </div>
             </div>
             <div className="container mx-auto">
-              <div className="flex flex-col  md:flex-row ">
+              <div className="vr_main_contant flex flex-col  md:flex-row ">
                 <div className="VR-park_top_img lg:w-[40%] w-full flex  relative Width  lg:pt-12">
                   <img
                     src={item.vrThemeParkImg}
                     alt=""
-                    className="object-cover w-[200px] md:w-[300px] lg:w-full h-full pt-5"
-                  />
+                    className="hidden object-cover w-[200px] md:w-[300px] lg:w-full h-full pt-5"
+                  />  
                   <div
                     className="Direction_btn absolute lg:w-[250px] lg:h-[60px] w-[150px] h-[30px] lg:bottom-28 lg:-right-6 bottom-10 md:bottom-20 right-24 md:right-10 flex justify-center items-center m-4"
                     style={{
@@ -105,13 +112,13 @@ const VrThemePark = ({ onMount, onReviewMount }) => {
                       <a href={item.buttonLink}>{item.button}</a>
                     </p>
                   </div>
-                  <div className="pin_img_map absolute lg:top-72 top-32 lg:-right-48 md:-right-32 right-12">
+                  {/* <div className="pin_img_map absolute lg:top-72 top-32 lg:-right-48 md:-right-32 right-12">
                     <img
                       src={"/map.png"}
                       alt=""
                       className="object-cover md:w-[220px] w-[100px] h-full "
                     />
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="heading_vr_theme_park_main lg:w-[60%] w-full flex flex-col">
