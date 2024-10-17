@@ -1227,12 +1227,16 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
   padding: 20px 0 0px;
   gap: 10px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  flex-wrap: nowrap;
+  align-items: start;
+  overflow: scroll;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .Why_vr .cards_inner_why_vr .cars_inner_main {
-  width: 48%;
+  width: 100%;
+  min-width: 250px;
 }
 
 .Why_vr .cards_inner_why_vr .cars_inner_main:last-child {
@@ -1248,7 +1252,7 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 
 .Why_vr .cards_inner_why_vr .cars_inner_main p {
   font-size: 10px;
-  min-height: 100px;
+  margin: 0 0 30px;
 }
 
 .adventure_boxes {
@@ -1317,6 +1321,8 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 
 .Games_to_explore_inner p.font-Poppins.md\:text-\[16\.67px\].text-\[15px\].md\:font-medium.md\:pl-40.pt-6 {
   text-align: justify;
+  font-size: 12px;
+  line-height: unset;
 }
 
 .game-slider-main .slick-slider {
@@ -1463,10 +1469,11 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 }
 
 .Review_page_main {
-  padding: 25px 0 0;
+  padding: 0px 0 0;
   justify-content: start !important;
   align-items: baseline;
   width: 100%;
+  margin: -60px 0 0;
 }
 
 .Review_page_main h2 {
@@ -1556,7 +1563,7 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 .happy_cliets_main p.client_page_slider_para {
   padding: 10px 0 0;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .About_tp_main {
@@ -1583,7 +1590,7 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 }
 
 .About_tp_main .abt_tp_img_bottom p {
-  font-size: 14px;
+  font-size: 12px;
   text-align: justify;
 }
 
@@ -1730,7 +1737,7 @@ ul.Footer_social_icons {
 }
 
 .Hero_banner_inner .BG-IMG_MAIN img {
-  height: 700px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -1752,6 +1759,8 @@ ul.Footer_social_icons {
 }
 
 .Why_vr p.md\:text-\[16\.67px\].text-\[14px\].leading-6.font-Poppins {
+  font-size: 12px;
+  line-height:unset;
   text-align: justify;
 }
 
@@ -1874,7 +1883,10 @@ p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].tex
 }
 
 .Review_page_main_top {
-  position: unset;
+  position: relative;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
 }
 
 .Review_page_main_top .review_page_para p {
@@ -1883,8 +1895,9 @@ p.uppercase.font-Poppins.tracking-widest.font-semibold.md\:text-\[22\.23px\].tex
 }
 
 .VR_THEME_PARK_MAIN .vr_main_contant {
-  position: unset;
+  /* position: unset; */
   width: 100%;
+  top: 30px;
 }
 
 p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
@@ -1898,31 +1911,44 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
 }
 
 .VR_THEME_PARK_MAIN .VR-park_top_img img {
-  display: block !important;
+  /* display: block !important; */
   height: auto !important;
   margin: 0 0 -40px;
 }
 
-.VR_THEME_PARK_MAIN .main_bg_img img {
+/* .VR_THEME_PARK_MAIN .main_bg_img img {
   display: none;
-}
+} */
 
 .happy_cliets_main {
   padding-top: 10px;
 }
 
-.VR_THEME_PARK_MAIN .Direction_btn {
-  background: #fff !important;
+.VR_THEME_PARK_MAIN .main_bg_img img {
+  top: 50px;
 }
 
+/* .VR_THEME_PARK_MAIN .Direction_btn {
+  background: #fff !important;
+} */
+
 .VR_THEME_PARK_MAIN .Direction_btn a {
-  width: auto;
-  height: 45px;
-  position: unset;
-  padding: 0;
-  font-size: 16px;
-  vertical-align: bottom;
-  align-content: center;
+  /* width: auto; */
+  /* height: 45px; */
+  /* position: unset; */
+  /* padding: 0; */
+  /* font-size: 16px; */
+  /* vertical-align: bottom; */
+  /* align-content: center; */
+  display: none;
+}
+
+.VR_THEME_PARK_MAIN .vr_main_contant {
+  height: 25%;
+}
+
+.VR_THEME_PARK_MAIN .Direction_btn {
+  display: none;
 }
 
 .heading_vr_theme_park_main h2.lg\:text-\[52px\].text-\[40px\].font-Poppins.font-semibold.leading-\[52px\] {
@@ -1939,5 +1965,89 @@ p.para_vr_tp.md\:text-\[16px\].text-\[15px\].md\:font-medium.font-Poppins.pt-6 {
   height: auto;
 }
 
+.adventure_boxes h1 {
+  font-size: 28px;
+}
+
+.adventure_boxes p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.Hero_banner_inner .hero_banner_contant .flex.justify-center.items-center.gap-4.pt-8.pb-12 {
+  padding: 20px 0 40px;
+}
+
+.adventure_boxes .book_button {
+  margin: 10px 0 10px;
+  font-size: 12px;
+  padding: 12px 0 12px;
+}
+
+.bottom_btns_main .banner_bottom_btn .offers_running_text .uppercase.font-Poppins.tracking-wider {
+  font-size: 12px;
+}
+
+.Hero_banner_inner {
+  height: auto;
+}
+
+.Games_slider_home .absolute.top-\[92px\].right-\[66px\].xl\:right-\[44px\].\32 xl\:right-\[66px\] {
+  right: 45px !important;
+}
+
+.Games_slider_home .absolute.top-\[110px\].right-\[60px\].xl\:right-\[49px\].\32 xl\:right-\[60px\] {
+  right: 38px !important;
+}
+
+.game-slider-main .hidden.xl\:flex.absolute.top-40.-right-16.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 {
+  display: block !important;
+  right: -13px !important;
+  padding: 6px;
+}
+
+.game-slider-main .hidden.xl\:flex.absolute.top-40.-right-16.bg-purple-300.text-primary.p-4.rounded-full.cursor-pointer.z-10 svg {
+  width: 15px;
+  height: 15px;
+}
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .flex.flex-col.lg\:flex-row.justify-between.items-center {
+  position: relative;
+  align-items: start;
+}
+
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .flex.flex-col.lg\:flex-row.justify-between.items-center .textts {
+  align-items: start;
+}
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .Banner_offer {
+  width: 100%;
+}
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .Banner_offer .flex.flex-col.justify-center.items-center.pt-3 p {
+  border: 0;
+  width: auto;
+  position: absolute;
+  top: -75px;
+  right: 0;
+}
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .Banner_offer .flex.flex-col.justify-center.items-center.pt-3 h3 {
+  width: auto;
+  position: absolute;
+  top: -36px;
+  right: 0;
+  font-size: 32px;
+}
+
+.banner1 .slick-slider .slick-list .Hot_running_slider .Banner_offer .flex.flex-col.justify-center.items-center.pt-3 {
+  padding: 0;
+  margin: 0;
+}
+
+.Site_header.text-white .nav_btn {
+  padding: 3px 8px !important;
+}
 
 }
