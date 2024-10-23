@@ -5,15 +5,18 @@ const BannerSlide = ({ caraousel, slide }) => {
     <div className="Hot_running_slider">
       {caraousel.map((item, index) => (
         <div key={index} className="container mx-auto py-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <div className="textts flex flex-col justify-start items-start transition-all duration-500 ease-in-out">
-              <h3 className="font-Poppins font-bold text-[26px]">
+          <div className="textts flex flex-col justify-start items-start transition-all duration-500 ease-in-out">
+              <div className="title">
+                <h3 className="font-Poppins font-bold text-[26px]">
                 {item.title1}
               </h3>
-              <p className="uppercase text-[16px] font-Poppins">
+              </div>
+              {/* <p className="uppercase text-[16px] font-Poppins">
                 {item.title2}
-              </p>
+              </p> */}
             </div>
+          <div className="flex flex-col lg:flex-row justify-between items-center">
+            
             <div className="w-full flex flex-col md:flex-row items-center justify-center">
               <div className="Banner_offer flex flex-col md:flex-row justify-center items-center gap-7 transition-all duration-500 ease-in-out">
                 <img
@@ -21,7 +24,7 @@ const BannerSlide = ({ caraousel, slide }) => {
                   alt=""
                   className="transition-all duration-500 ease-in-out"
                 />
-                <div className="flex flex-col justify-center items-center pt-3">
+                {/* <div className="flex flex-col justify-center items-center pt-3">
                   <span className="bg-[#FF0091] uppercase px-10 py-2 rounded-full text-[15px] tracking-wider font-Poppins font-bold text-white transition-all duration-500 ease-in-out">
                     {slide.discount}
                   </span>
@@ -31,7 +34,7 @@ const BannerSlide = ({ caraousel, slide }) => {
                   <h3 className="text-[80px] font-Poppins font-semibold text-white uppercase transition-all duration-500 ease-in-out">
                     {slide.product}
                   </h3>
-                </div>
+                </div> */}
                 <div className="flex flex-col gap-2">
                   <button className="bg-primary rounded-md text-white p-3 text-[15px] font-Poppins font-semibold uppercase tracking-wider">
                     <a href={item.button1EditLink}>{item.button1}</a>
@@ -40,13 +43,13 @@ const BannerSlide = ({ caraousel, slide }) => {
                     <a href={item.button2EditLink}>{item.button2}</a>
                   </button>
                 </div>
-                <div className="slider_last_img">
+                {/* <div className="slider_last_img">
                   <img
                     src={slide.gameIcon}
                     alt=""
                     className="transition-all duration-500 ease-in-out"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import GameSlide from "../components/GameSlide";
+import GameBanner1 from "../assets/GameBanner1.jpg"
+import GameBanner2 from "../assets/GameBanner2.png"
 
 import Banner from "../components/Banner";
 
@@ -53,12 +55,11 @@ const GamesPage = ({onMount}) => {
 
           <div className="border-t border-t-[#FF0091] relative">
             <div>
-              <p className="font-Poppins  md:text-[16.67px] text-[15px] md:font-medium md:pl-40 pt-6">
-                {item.bottomBody}
-              </p>
-              <GameSlide list={topList} />
-            </div>
-            <div className="flex justify-start items-center gap-5 absolute -top-10 left-0">
+              <div className="mobile_banner_img">
+                <img src={GameBanner1} alt="" />
+              </div>
+
+              <div className="banner_bottom flex justify-start items-center gap-5 absolute -top-10 left-0">
               <div
                 className="flex justify-center items-center md:w-[150px] md:h-[50px] h-[40px] w-[100px]  rounded-md"
                 style={{
@@ -85,6 +86,13 @@ const GamesPage = ({onMount}) => {
                 {item.topHeading2}
               </h3>
             </div>
+
+              <p className="font-Poppins  md:text-[16.67px] text-[15px] md:font-medium md:pl-40 pt-6">
+                {item.bottomBody}
+              </p>
+              <GameSlide list={topList} />
+            </div>
+            
           </div>
         </div>
       </div>
@@ -94,12 +102,11 @@ const GamesPage = ({onMount}) => {
       <div className="Games_to_explore_inner Bottom_inner">
         <div className="container mx-auto">
           <div className="border-t border-t-[#FF0091] relative mt-20">
-            <div>
-              <p className="font-Poppins md:font-medium text-[15px]  md:text-[16.67px] md:pl-40 pt-6">
-                {item.topBody}
-              </p>
-            </div>
-            <div className="flex justify-start items-center gap-5 absolute -top-10 left-0">
+          <div className="mobile_banner_img">
+                <img src={GameBanner2} alt="" />
+              </div>
+
+              <div className="flex justify-start items-center gap-5 absolute -top-10 left-0">
               <div
                 className="flex justify-center items-center md:w-[150px] md:h-[50px] h-[40px] w-[100px]  rounded-md"
                 style={{
@@ -126,6 +133,13 @@ const GamesPage = ({onMount}) => {
                 {item.bottomHeading2}
               </h3>
             </div>
+            
+            <div>
+              <p className="font-Poppins md:font-medium text-[15px]  md:text-[16.67px] md:pl-40 pt-6">
+                {item.topBody}
+              </p>
+            </div>
+            
           </div>
           <GameSlide list={bottomList} />
         </div>
