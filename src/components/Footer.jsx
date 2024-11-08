@@ -10,6 +10,20 @@ import {
 } from "react-icons/fa";
 import backicon from "../assets/backicon.png";
 import footerImg from "../assets/footer.png";
+import sharebottom from "../assets/share_bottom.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPinterest,
+  faLinkedin,
+  faYoutube,
+  faDribbble,
+  faGithub,
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 
 const Footer = ({onMount}) => {
   const [data, setData] = useState([]);
@@ -52,6 +66,74 @@ const Footer = ({onMount}) => {
     fetchData();
     fetchFooterData();
   }, [onMount]);
+
+
+  // const [images, setImages] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchInstagramPhotos = async () => {
+  //     try {
+  //       const response = await fetch("https://partoftrading.com/VRThemePark/user/instagramFeed");
+  //       const data = await response.json();
+  
+  //       // Log data to verify structure
+  //       console.log("Fetched data:", data);
+  
+  //       // Check if data.data exists and setImages accordingly
+  //       if (data && data.data) {
+  //         setImages(data.data);
+  //       } else {
+  //         console.error("Unexpected response structure:", data);
+  //         setImages([]); // set empty array if structure is unexpected
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching Instagram feed:", error);
+  //     }
+  //   };
+  
+  //   fetchInstagramPhotos();
+  // }, []);
+
+
+
+  const [mediaUrls, setMediaUrls] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the API
+    fetch('https://partoftrading.com/VRThemePark/user/instagramFeed')
+      .then((response) => response.json())
+      .then((data) => {
+        // Extract media URLs and randomly select 8
+        const urls = data.map((item) => item.media_url);
+        const shuffledUrls = urls.sort(() => 0.5 - Math.random()); // Shuffle the URLs
+        setMediaUrls(shuffledUrls.slice(0, 8)); // Get the top 8 items
+      })
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+
+
+
+//   const [mediaUrls, setMediaUrls] = useState([]);
+
+// useEffect(() => {
+//   // Fetch data from the API
+//   fetch('https://partoftrading.com/VRThemePark/user/instagramFeed')
+//     .then((response) => response.json())
+//     .then((data) => {
+//       // Extract media URLs and randomly select 8
+//       const shuffledData = data.sort(() => 0.5 - Math.random()); // Shuffle the data
+//       setMediaUrls(shuffledData.slice(0, 8)); // Get the top 8 items
+//     })
+//     .catch((error) => console.error('Error fetching data:', error));
+// }, []);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
   return (
     <div
       className=" text-white  "
@@ -93,14 +175,48 @@ const Footer = ({onMount}) => {
               <div className="insta_feed_main_vr_tp">
                 <div className="inner_insta_fees_vr_tp">
                 <div className="Insta_feed_img_box lg:flex grid grid-cols-2    place-items-center justify-center items-center place-content-center gap-0 pt-10">
-                <div className="p-0">
+                
+                 
+                {mediaUrls.map((url, index) => (
+                   <a 
+                   key={index} 
+                   href="https://www.instagram.com/vrthemeparkind" // Replace with your Instagram account URL
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                 >
                   <img
-                    src={item.contactUsImages.img1}
-                    alt=""
+                    key={index}
+                    src={url}
                     className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
+                    alt="Instagram Post"
+                    
                   />
-                </div>
-                <div className="p-0">
+                  </a>
+                ))}
+
+
+                    {/* {mediaUrls.map((item, index) => (
+                          item.media_type === "IMAGE" ? (
+                            <img
+                              key={index}
+                              src={item.media_url}
+                              className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
+                              alt="Instagram Post"
+                            />
+                          ) : (
+                            <video
+                              key={index}
+                              src={item.media_url}
+                              className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
+                              controls
+                            />
+                          )
+                        ))} */}
+
+
+
+                
+                {/* <div className="p-0">
                   <img
                     src={item.contactUsImages.img2}
                     alt=""
@@ -120,9 +236,9 @@ const Footer = ({onMount}) => {
                     alt=""
                     className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
                   />
-                </div>
+                </div> */}
               </div>
-              <div className="Insta_feed_img_box lg:flex grid grid-cols-2    place-items-center justify-center items-center place-content-center gap-0 pb-10">
+              {/* <div className="Insta_feed_img_box lg:flex grid grid-cols-2    place-items-center justify-center items-center place-content-center gap-0 pb-10">
                 <div>
                   <img
                     src={item.contactUsImages.img5}
@@ -151,7 +267,7 @@ const Footer = ({onMount}) => {
                     className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
                   />
                 </div>
-              </div>
+              </div> */}
                 </div>
               </div>
               <div className="flex justify-center items-center gap-2">
@@ -170,6 +286,41 @@ const Footer = ({onMount}) => {
                
               </div>
             </div>
+
+{/* <div className="insta_feed_main py-10">
+  <div className="Insta_feed_img_box grid grid-cols-2 lg:grid-cols-4 gap-4 place-items-center">
+    {images.length > 0 ? (
+      images.map((item) => (
+        <a key={item.id} href={item.permalink} target="_blank" rel="noopener noreferrer">
+          <img
+            src={item.media_url}
+            alt={item.caption || "Instagram image"}
+            className="md:w-[270px] md:h-[270px] w-full h-full object-cover"
+          />
+        </a>
+      ))
+    ) : (
+      <p>No images available</p>
+    )}
+  </div>
+</div> */}
+
+
+{/* <div>
+      <h2>Instagram Feed</h2>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+        {mediaUrls.map((url, index) => (
+          <img
+            key={index}
+            src={url}
+            alt="Instagram Post"
+            style={{ width: '100%', maxWidth: '200px', height: '200px', objectFit: 'cover' }}
+          />
+        ))}
+      </div>
+    </div> */}
+
+    
             <div className="we_are_footer_heading mt-5">
               <h3 className="uppercase font-Poppins font-bold tracking-widest text-[20px] text-center">
                 {item.featuredTitle}
@@ -248,6 +399,9 @@ const Footer = ({onMount}) => {
                 <a href=""><FaFacebookF className="text-[20px] font-bold" /></a>
               </li>
               <li>
+                <a href=""><FaInstagram className="text-[20px] font-bold" /></a>
+              </li>
+              <li>
                 <a href=""><FaTwitter className="text-[20px] font-bold" /></a>
               </li>
               <li>
@@ -267,6 +421,45 @@ const Footer = ({onMount}) => {
           </div>
         ))}
       </div>
+
+      <div className="social_icons">
+      <span className={`close-btn ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <img src={sharebottom} alt="" />
+      </span>
+
+      <div className={`media-icons ${isOpen ? "open" : ""}`}>
+        {/* <a href="#" style={{ background: "#e60023" }}>
+          <FontAwesomeIcon icon={faPinterest} />
+          
+        </a> */}
+        <a href="https://www.instagram.com/vrthemeparkind" target="black" style={{ background: "#0e76a8" }}>
+          <FontAwesomeIcon icon={faInstagram} />
+          
+        </a>
+        <a href="#" style={{ background: "#ff0000" }}>
+          <FontAwesomeIcon icon={faYoutube} />
+          
+        </a>
+        {/* <a href="#" style={{ background: "#ea4689" }}>
+          <FontAwesomeIcon icon={faDribbble} />
+          
+        </a> */}
+        {/* <a href="#" style={{ background: "#8e36ff" }}>
+          <FontAwesomeIcon icon={faGithub} />
+          
+        </a> */}
+        <a href="#" style={{ background: "#4267b2" }}>
+          <FontAwesomeIcon icon={faFacebookF} />
+          
+        </a>
+        <a href="#" style={{ background: "#1da1f2" }}>
+          <FontAwesomeIcon icon={faTwitter} />
+          
+        </a>
+      </div>
+    </div>
+
+    
     </div>
   );
 };
