@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { MdOutlineHome } from "react-icons/md";
-import {
-  FaBuilding,
-  FaCog,
-  FaMapMarkedAlt,
-  FaCircleNotch,
-} from "react-icons/fa";
+import { MdChat, MdLocalOffer, MdLocationPin, MdPriceChange } from "react-icons/md";
 import axios from "axios";
 
 const MobileNavbar = ({ onMount }) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [ setLoading] = useState(true);
+  const [ setError] = useState(null);
   const url = process.env.REACT_APP_API_BASE_URL;
 
   useEffect(() => {
@@ -42,27 +36,27 @@ const MobileNavbar = ({ onMount }) => {
       {data.map((item, index) => (
         <ul key={index} className="flex justify-between items-center">
           <li className="flex flex-col justify-center items-center">
-            <MdOutlineHome className="text-[25px] font-bold" />
+            <MdChat className="text-[25px] font-bold" />
             <p className="font-Poppins font-medium tracking-wide text-[12px] mt-1 uppercase">
-              {item.navlink1}
+            <a href={item.navEditLink1}>{item.navlink1}</a>
             </p>
           </li>
           <li className="flex flex-col justify-center items-center">
-            <FaCog className="text-[25px] font-bold" />
+            <MdLocationPin className="text-[25px] font-bold" />
             <p className="font-Poppins font-medium tracking-wide text-[12px] mt-1 uppercase">
-              {item.navlink2}
+            <a href={item.navEditLink2}>{item.navlink2}</a>
             </p>
           </li>
           <li className="flex flex-col justify-center items-center">
-            <FaMapMarkedAlt className="text-[25px] font-bold" />
+            <MdLocalOffer className="text-[25px] font-bold" />
             <p className="font-Poppins font-medium tracking-wide text-[12px] mt-1 uppercase">
-              {item.navlink3}
+            <a href={item.navEditLink3}>{item.navlink3}</a>
             </p>
           </li>
           <li className="flex flex-col justify-center items-center">
-            <FaCircleNotch className="text-[25px] font-bold" />
+            <MdPriceChange className="text-[25px] font-bold" />
             <p className="font-Poppins font-medium tracking-wide text-[12px] mt-1 uppercase">
-              {item.navlink4}
+            <a href={item.navEditLink4}>{item.navlink4}</a>
             </p>
           </li>
         </ul>
